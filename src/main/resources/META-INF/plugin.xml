@@ -1,7 +1,7 @@
-<idea-plugin url="http://github.com/trubitsyn/idea-visiblefortesting">
-    <id>VisibleForTesting</id>
-    <name>VisibleForTesting</name>
-    <vendor email="nikola.trubitsyn@gmail.com" url="http://www.github.com/trubitsyn">Nikola Trubitsyn</vendor>
+<idea-plugin url="https://github.com/atlassian-forks/idea-visiblefortesting">
+    <id>VisibleForTesting-atlassian</id>
+    <name>VisibleForTesting (Atlassian fork)</name>
+    <vendor email="mkemp@atlassian.com" url="https://github.com/atlassian-forks/idea-visiblefortesting">Atlassian + Nikola Trubitsyn</vendor>
     <idea-version since-build="145"/>
 
     <depends>com.intellij.modules.java</depends>
@@ -15,6 +15,7 @@
         <h1>Supported annotation types</h2>
         <ul>
             <li><a href="https://developer.android.com/reference/android/support/annotation/VisibleForTesting.html">android.support.annotation.VisibleForTesting</a></li>
+            <li><a href="https://bitbucket.org/atlassian/atlassian-annotations/src/master/atlassian-annotations/src/main/java/com/atlassian/annotations/VisibleForTesting.java">com.atlassian.annotations.VisibleForTesting</a></li>
             <li><a href="https://google.github.io/guava/releases/19.0/api/docs/com/google/common/annotations/VisibleForTesting.html">com.google.common.annotations.VisibleForTesting</a></li>
             <li><a href="https://ci.apache.org/projects/flink/flink-docs-master/api/java/org/apache/flink/annotation/VisibleForTesting.html">org.apache.flink.annotation.VisibleForTesting</a></li>
             <li><a href="https://joel-costigliola.github.io/assertj/core/api/org/assertj/core/util/VisibleForTesting.html">org.assertj.core.util.VisibleForTesting</a></li>
@@ -47,8 +48,7 @@
 
     <change-notes><![CDATA[
         <ul>
-            <li>Added support for @org.assertj.core.util.VisibleForTesting</li>
-            <li>Added support for @org.fest.util.VisibleForTesting</li>
+            <li>Added support for @com.atlassian.annotations.VisibleForTesting</li>
         </ul>
     ]]>
     </change-notes>

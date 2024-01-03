@@ -1,4 +1,4 @@
-# idea-visiblefortesting [![Build Status](https://travis-ci.org/trubitsyn/idea-visiblefortesting.svg?branch=master)](https://travis-ci.org/trubitsyn/idea-visiblefortesting) [![Downloads](https://img.shields.io/jetbrains/plugin/d/9952-visiblefortesting.svg)](https://plugins.jetbrains.com/plugin/9952-visiblefortesting) [![Version](https://img.shields.io/jetbrains/plugin/v/9952-visiblefortesting.svg)](https://plugins.jetbrains.com/plugin/9952-visiblefortesting)
+# Fork of IntelliJ @VisibleForTesting plugin
 
 @VisibleForTesting annotation support for the IntelliJ platform.
 
@@ -11,6 +11,7 @@ Now you don't have to: plugin will do that for you.
 ## Supported annotation types
 
 * [android.support.annotation.VisibleForTesting](https://developer.android.com/reference/android/support/annotation/VisibleForTesting.html)
+* [com.atlassian.annotations.VisibleForTesting](https://bitbucket.org/atlassian/atlassian-annotations/src/master/atlassian-annotations/src/main/java/com/atlassian/annotations/VisibleForTesting.java)
 * [com.google.common.annotations.VisibleForTesting](https://google.github.io/guava/releases/19.0/api/docs/com/google/common/annotations/VisibleForTesting.html)
 * [org.apache.flink.annotation.VisibleForTesting](https://ci.apache.org/projects/flink/flink-docs-master/api/java/org/apache/flink/annotation/VisibleForTesting.html)
 * [org.assertj.core.util.VisibleForTesting](https://joel-costigliola.github.io/assertj/core/api/org/assertj/core/util/VisibleForTesting.html)

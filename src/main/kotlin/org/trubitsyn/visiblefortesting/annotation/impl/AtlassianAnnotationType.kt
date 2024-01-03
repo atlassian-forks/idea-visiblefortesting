@@ -1,5 +1,5 @@
 /*
- * Copyright 2017-2019 Nikola Trubitsyn
+ * Copyright 2017, 2018 Nikola Trubitsyn
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,20 +14,13 @@
  * limitations under the License.
  */
 
-package org.trubitsyn.visiblefortesting.annotation
+package org.trubitsyn.visiblefortesting.annotation.impl
 
 import com.intellij.openapi.project.Project
-import org.trubitsyn.visiblefortesting.annotation.impl.*
+import com.intellij.psi.JavaPsiFacade
+import com.intellij.psi.PsiElement
+import com.intellij.psi.PsiType
+import org.trubitsyn.visiblefortesting.annotation.base.AnnotationType
+import org.trubitsyn.visiblefortesting.visibility.Visibility
 
-object AnnotationTypes {
-    private val annotations = setOf(
-            AndroidAnnotationType(),
-            AtlassianAnnotationType(),
-            GuavaAnnotationType(),
-            FlinkAnnotationType(),
-            AssertJAnnotationType(),
-            FestAnnotationType()
-    )
-
-    fun available(project: Project) = annotations.filter { it.isAvailable(project) }
-}
+class AtlassianAnnotationType : AnnotationType(name = "VisibleForTesting", qualifiedName = "com.atlassian.annotations.VisibleForTesting")
