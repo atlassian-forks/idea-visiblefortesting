@@ -21,31 +21,31 @@ apply plugin: 'java'
 
 intellij {
     plugins = ['Kotlin']
-    version 'IC-2017.1'
+    version 'IC-2019.1'
     updateSinceUntilBuild false
 }
 
 group 'org.trubitsyn.visiblefortesting'
-version '1.4.0-atlassian-1'
+version '1.4.0-atlassian-2'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testCompile "org.mockito:mockito-core:2.23.0"
 }
 
 compileKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
 compileTestKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
